@@ -8,14 +8,14 @@ function mintNFT (_name, _type, _shape, _color, _use) {
         "Use" : _use
     }
     NFTs.push(NFT);
-    console.log(_name+" has been Minted");
+    console.log(_name+" has been Minted\n");
 
 }
 
 function listNFTs () {
     var i = 0;
     while (i < NFTs.length) {
-        console.log("NFT " + (i + 1) + ":");
+        console.log("NFT " + (i + 1)  + ":\n");
         console.log("Name : " + NFTs[i].Name);
         console.log("Type : " + NFTs[i].Type);
         console.log("Shape: " + NFTs[i].Shape);
@@ -26,7 +26,7 @@ function listNFTs () {
 }
 
 function getTotalSupply() {
-    console.log(NFTs.length);
+    console.log("\nTotal NFTs minted : " + NFTs.length);
 
 }
 mintNFT("Pixel","Art", "Pixelated","Retro","In profile pictures");
